@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "clang",
+      "args": [
+//          "-###",
+          "'@.vscode/compile_flags.txt'",
+          "./src/main.c",
+          "./src/sort.c",
+          "-o",
+          "bubble_sort"
+              ],
+      "problemMatcher": [],
+      "group": { "kind": "build", "isDefault": true }
+    }
+  ]
+}
+ 
